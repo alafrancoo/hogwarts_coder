@@ -108,18 +108,10 @@ body {
             border-radius: 108px;
             .tituloTarjetas {
                 color: #d5a707;
-                font-weight: 800;
             }
-            .contenedor {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 60px;
+            .magosDiv {
                 .tarjetasMagos {
-                    height:550px;
                     background-color: #d5a707;
-                    width: 30%;
                     margin: 35px auto;
                     padding: 15px;
                     border-radius: 16px;
@@ -127,7 +119,7 @@ body {
                         height: 340px;
                         object-fit: cover;
                         width: 95%;
-                        margin: 7px 7px 7px 7px;
+                        margin: 7px;
                     }
                 }
             }
