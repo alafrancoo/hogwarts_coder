@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #2d3250;
+    opacity: 0,5;
+
+    .logo {
+        width: 35px;
+    }
+    
+    .navegador {
+        list-style-type: none;
+        text-decoration: none;
+        color: #d5a707;
+        font-weight: 800;
+        font-size: 1.2rem;
+        display: inline;
+    }
+}
+
+
+
+.main {
+    .encabezado {
+        width: 100%;
+        /* comento esta propiedad por el mismo comentario que puse abajo, no quiero que se desborde antes de saber como poner el texto sobre la imagen*/
+        /*height: 40vw;*/
+        .titulopagina {
+            font-weight: 900;
+            font-size: 6rem;
+            color: #fff;
+        }
+
+        .subtitulopagina {
+            font-weight: 800;
+            font-size: 2.8rem;
+            color:#fff;
+        }
+        
+        /*yo quiero hacer que el texto vaya sobre la imagen, pero todavia no vimos como hacerlo, asi que termina por desbordarse si aplico la propiedad objet-fit : cover, que es lo que quiero*/
+        .imgencabezado {
+            width: 100%;
+            /*height: 100%;
+            object-fit: cover;*/
+        }
+
+        .pintroduccion {
+            color: #fff;
+            padding: 10px;
+        }
+
+        background-color: #424769;
+    }  
+
+    .botones {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #d5a707;
+        color: #fff;
+        padding: 10px;
+        font-weight: 600;
+        border-radius: 13px 13px 13px 13px;
+        .botonesinversos {
+            background-color: #fff;
+            color: #d5a707;  
+            border-width: 3px;
+            border-style: solid;
+        }
+    }
+    
+    /* Aqui van los estilos especificos de la pagina index*/
+
+
+
+
+    .contenedoresindex {
+        padding: 20px;
+        width: 40%;  
+        margin: 30px; 
+
+        .titulonoticias {
+            font-weight: 700;
+        }    
+        .subtitulosindex {
+        font-weight: 800;
+        color: #2d3250;
+        }    
+        .titulonoticias {
+        margin-top: 10px;
+        }
+        .imgindex {
+            width: 100%;
+        }
+        .botones {
+            margin: 10px 0px 10px 0px;
+        }
+        .texto {
+            margin-top: 10px;
+        }
+    }
+    
+
+
+    /* Aqui van los estilos especificos de la pagina historia*/
+    .contenedorfundadores {
+        .subtitulo {
+            color: #2d3250;
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 20px;
+        }
+        .texto {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            width: 70%;
+        }
+
+        .fundadores {
+
+            .imgfundadores {
+                border-radius: 50%;
+                width: 170px;
+            }
+
+            font-weight: 700;
+            display: inline-block;
+            margin: 30px;
+        }
+        .imgcopadecasas {
+            width: 100%;
+        }
+    }
+
+
+    .contenedortarjetas {
+        background-color: #2d3250;
+        border-radius: 108px;
+        width: 90%;     
+        margin: 100px auto;
+        padding: 20px;
+        .titulotarjetas {
+            color: #000;
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+        .tarjetasmagos {
+            background-color: #d5a707;
+            width: 25%;
+            margin: 35px auto;
+            padding: 15px;
+            .imgtarjetas {
+                height: 340px;
+                object-fit: cover;
+                width: 95%;
+                margin: 7px 7px 7px 7px;
+            }
+        }
+    }
+
+    /*Aqui van los estilos especificos de la pagina inscripciones*/
+    .inscripciones {
+        padding: 40px;
+        .subtitulo {
+            font-size: 3rem;
+            font-weight: 800;
+        }
+        .tarjetafelicitaciones {
+            margin-top: 30px;
+            width: 50%;
+            .subtitulofelicitaciones {
+                color: #2d3250;
+                font-size: 1.6rem;
+            }
+            .texto {
+                margin-top: 10px;
+            }
+            .botones {
+                margin-top: 15px;
+            }
+        }
+
+        .tarjetaerror {
+            margin: 30px;
+            padding: 20px;
+            width: 400px;
+            background-color: #424769;
+            color: #fff;
+            .subtituloerror {
+                font-weight: 700;
+            }
+            .texto {
+                margin-top: 20px;
+            }
+            .botones {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    /*Aqui van los estilos especificos de la pagina padres*/
+
+    .contenedorcorreo {
+        background-color: #2d3250;
+        color: #fff;
+        width: 40%;
+        margin-left: 10%;
+        .divcorreo{
+            padding: 20px;
+            .datospaqueteria{
+                margin-top: 10px;
+                list-style: none;
+            }
+        }
+        .imgcorreo {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+        }
+    }
+
+    .contenedornoticias {
+        width: 40%;
+        margin: 10%;
+        .subtitulo {
+            color: #2d3250;
+            font-size: 2rem;
+            font-weight: 800rem;
+        }
+        .noticia {
+            margin: 30px 0px 20px 0px;
+            .subtitulonoticias {
+                font-size: 1.3rem;
+            }
+            .texto {
+                margin: 15px 0px 15px 0px;
+            }
+            .imgnoticias {
+                width: 100%;
+                height: 340px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    /*Aqui van los estilos especificos de la pagina contacto*/
+
+        .contenedorcontacto {
+            margin: 30px;
+            padding: 15px;
+            .formulariotexto {
+                color: #2d3250;
+                font-weight: 600;
+                display: block;
+                margin: 10px 0px 10px 0px;
+            }
+            .botones{
+                border-style: none;
+                margin-top: 10px;
+            }
+            /*aca intente darle estilo a los inputs y me gusto el resultado por lo que lo deje, pero el placeholder desaparece por mas de que le ponga un color*/
+            .inputs {
+                background-color: #676f9d;
+                color: #fff;
+            }
+            .subtitulo {
+                color: #2d3250;
+                font-size: 2rem;
+            }    
+            .texto {
+                font-size: 1.5rem;
+                margin-top: 20px;
+                font-weight: 600;
+            }
+            .mapa {
+                margin-top: 20px;
+                border: 15px #d5a707 solid;
+            }
+        }
+
+}
+
+
+
+.footer {
+    background-color: #2d3250;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+
+    .contenedorfooter{
+        .subtitulofooter{
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .texto {
+            display: inline;
+            margin-right: 20px;
+        }
+        .mapa {
+            margin-top: 10px;
+            display: block;
+        }
+    }        
+    .subtituloredes {
+         font-size: 1.2rem;
+    }    
+     .iconosredes {
+         text-decoration: none;
+         color: #fff;
+     }
+
+}
