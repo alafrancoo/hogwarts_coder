@@ -6,62 +6,83 @@
     <script src="https://kit.fontawesome.com/e1590b4fdf.js" crossorigin="anonymous"></script>
     <title>Hogwarts - Padres</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header class="header">
-        <a href="../index.html"><img src="../assets/img/inicio.png" alt="inicio" class="logo"></a>
-        <nav>
-            <ul class="navegador">
-                <li><a href="../index.html" class="navegador">INICIO</a></li>
-                <li><a href="historia.html" class="navegador">HISTORIA</a></li>
-                <li><a href="inscripciones.html" class="navegador">INSCRIPCIONES</a></li>
-                <li><a href="#" class="navegador">PADRES</a></li>
-                <li><a href="contacto.html" class="navegador">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>    
-    <main class="main">
-        <section class="encabezado">
-            <h1 class="titulopagina">Plataforma para padres</h1>
-            <h2 class="subtitulopagina">Mantenga contacto con sus hijos</h2>
-            <img src="../assets/img/padres/encabezado.jpg" alt="Hogwarts en navidad" class="imgencabezado">
+    <header class="encIndex sticky-top">
+        <section class="headerNav d-flex">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <div class="container-fluid">
+                    <a href="../index.html"><img src="../assets/img/inicio.png" alt="inicio" class="navbar-brand logo"></a>
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon custom-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link anclasNavegador" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link anclasNavegador" href="./historia.html">HISTORIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link anclasNavegador" href="./inscripciones.html">INSCRIPCIONES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link anclasNavegador" href="#">PADRES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link anclasNavegador" href="./contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </section>
-        <section class="contenedorcorreo">
-            <div class="divcorreo">
-                <h3>Envíe un correo a sus hijos</h3>
-                <h4>Datos de paqueteria</h4>
-                <ul class="datospaqueteria">
-                    <li>Nombre del destinatario: Albus Dumbledore</li>
-                    <li>Dirección: Calle de los Magos, Hogwarts</li>
-                    <li>Ciudad: Hogsmeade</li>
-                    <li>Código postal: HP1 1HB</li>
-                    <li>País: Reino Unido</li>
-                </ul>
-            </div>
-            <img src="../assets/img/padres/envieregalo.jpg" alt="Harry Potter abriendo un regalo" class="imgcorreo">
+    </header>   
+    <main class="container-fluid w-100 d-flex flex-column justify-content-end align-items-center">
+        <section class="encabezado ">
+            <h1 class="tituloPagina">Plataforma para padres</h1>
+            <h2 class="subtituloPagina">Mantenga contacto con sus hijos</h2>
         </section>
-        <section class="contenedornoticias">
-            <h2 class="subtitulo">Últimas noticias</h2>
-            <div class="noticia">
-                <h4 class="subtitulonoticias">Hogwarts Introduce Cursos de Magizoología y Encantamientos Avanzados para el Próximo Año Escolar</h4>
-                <p class="texto">
-                    Hogwarts School of Witchcraft and Wizardry se complace en anunciar la incorporación de emocionantes cursos a su currículo para el próximo año académico. A partir de ahora, los estudiantes podrán explorar las maravillas de la Magizoología y perfeccionar sus habilidades con Encantamientos Avanzados. ¡Prepárense para un año lleno de descubrimientos mágicos y aprendizaje extraordinario en Hogwarts!
-                </p>
-                <img src="../assets/img/padres/noticia1.jpg" alt="Nueva clase en Hogwarts" class="imgnoticias">
-            </div>
-            <div class="noticia">
-                <h4 class="subtitulonoticias">Profesor Dumbledore Anuncia Clases Especiales de Adivinación para Desarrollar el Sexto Sentido Mágico</h4>
-                <p class="texto">
-                    El venerable Profesor Albus Dumbledore revela su iniciativa para el próximo año en Hogwarts: la introducción de Clases Especiales de Adivinación. Con el objetivo de desarrollar el sexto sentido mágico, estas lecciones ofrecerán a los estudiantes una perspectiva única sobre el arte de prever el futuro. ¡Prepárense para explorar el misterioso mundo de la adivinación con el Profesor Dumbledore como guía!
-                </p>
-                <img src="../assets/img/padres/noticia2.jpg" alt="Sala nueva de adivinación" class="imgnoticias">
-            </div>
-        </section>
+        <div class="contenedorPadresFlex">
+            <section class="contenedorNoticias">
+                <h2 class="subtitulo">Últimas noticias</h2>
+                <div class="noticia">
+                    <h4 class="subtituloNoticias">Hogwarts Introduce Cursos de Magizoología y Encantamientos Avanzados para el Próximo Año Escolar</h4>
+                    <p class="texto">
+                        Hogwarts School of Witchcraft and Wizardry se complace en anunciar la incorporación de emocionantes cursos a su currículo para el próximo año académico. A partir de ahora, los estudiantes podrán explorar las maravillas de la Magizoología y perfeccionar sus habilidades con Encantamientos Avanzados. ¡Prepárense para un año lleno de descubrimientos mágicos y aprendizaje extraordinario en Hogwarts!
+                    </p>
+                    <img src="../assets/img/padres/noticia1.jpg" alt="Nueva clase en Hogwarts" class="imgNoticias">
+                </div>
+                <div class="noticia">
+                    <h4 class="subtituloNoticias">Profesor Dumbledore Anuncia Clases Especiales de Adivinación para Desarrollar el Sexto Sentido Mágico</h4>
+                    <p class="texto">
+                        El venerable Profesor Albus Dumbledore revela su iniciativa para el próximo año en Hogwarts: la introducción de Clases Especiales de Adivinación. Con el objetivo de desarrollar el sexto sentido mágico, estas lecciones ofrecerán a los estudiantes una perspectiva única sobre el arte de prever el futuro. ¡Prepárense para explorar el misterioso mundo de la adivinación con el Profesor Dumbledore como guía!
+                    </p>
+                    <img src="../assets/img/padres/noticia2.jpg" alt="Sala nueva de adivinación" class="imgNoticias">
+                </div>
+            </section>
+            <section class="contenedorCorreo">
+                <div class="divCorreo">
+                    <h3>Envíe un correo a sus hijos</h3>
+                    <h4>Datos de paqueteria</h4>
+                    <ul class="datosPaqueteria">
+                        <li>Nombre del destinatario: Albus Dumbledore</li>
+                        <li>Dirección: Calle de los Magos, Hogwarts</li>
+                        <li>Ciudad: Hogsmeade</li>
+                        <li>Código postal: HP1 1HB</li>
+                        <li>País: Reino Unido</li>
+                    </ul>
+                </div>
+                <img src="../assets/img/padres/envieregalo.jpg" alt="Harry Potter abriendo un regalo" class="imgCorreo">
+            </section>
+        </div>
     </main>
-    <footer class="footer">
-        <section class="contenedorfooter">
-            <h4 class="subtitulofooter">¡Hable con la secretaría!</h4>
+    <footer>
+        <section class="contenedorFooter">
+            <h4 class="subtituloFooter">¡Hable con la secretaría!</h4>
             <i class="fa-solid fa-phone" class="icono"></i>
             <p class="texto">+44 (0) 20 3427 7770</p>
             <i class="fa-solid fa-envelope" class="icono"></i>
@@ -70,21 +91,27 @@
             <p class="texto">Studio Tour Dr, Leavesden, Watford WD25 7LR</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.365758839035!2d-0.4181464999999999!3d51.68975149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876402ee3f63599%3A0x2c0152fe0b4ec546!2sStudio%20Tour%20Dr%2C%20Leavesden%2C%20Watford%20WD25%207LR%2C%20Reino%20Unido!5e0!3m2!1ses!2sbr!4v1707154266316!5m2!1ses!2sbr" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
         </section>
-        <section class="contendedorredes">
-            <h4 class="subtituloredes">Nuestras redes sociales</h4>
-            <a href="https://www.instagram.com/hogwartsofficial_/?hl=es" target="_blank" class="iconosredes">
+        <section class="contendedorRedes">
+            <h4 class="subtituloRedes">Nuestras redes sociales</h4>
+            <a href="https://www.instagram.com/hogwartsofficial_/?hl=es" target="_blank" class="iconosRedes">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="iconosredes">
+            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="iconosRedes">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
-            <a href="https://www.facebook.com/HPHogwartsMystery/" target="_blank" class="iconosredes">
+            <a href="https://www.facebook.com/HPHogwartsMystery/" target="_blank" class="iconosRedes">
                 <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="https://www.youtube.com/@harrypotter" target="_blank" class="iconosredes">
+            <a href="https://www.youtube.com/@harrypotter" target="_blank" class="iconosRedes">
                 <i class="fa-brands fa-youtube"></i>
             </a>
         </section>
+        <div class="iconoWhatsapp">
+            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="icono">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

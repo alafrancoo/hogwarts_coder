@@ -6,80 +6,100 @@
     <script src="https://kit.fontawesome.com/e1590b4fdf.js" crossorigin="anonymous"></script>
     <title>Hogwarts - Historia</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header class="header">
-        <a href="../index.html"><img src="../assets/img/inicio.png" alt="inicio" class="logo"></a>
-        <nav>
-            <ul class="navegador">
-                <li><a href="../index.html" class="navegador">INICIO</a></li>
-                <li><a href="#" class="navegador">HISTORIA</a></li>
-                <li><a href="inscripciones.html" class="navegador">INSCRIPCIONES</a></li>
-                <li><a href="padres.html" class="navegador">PADRES</a></li>
-                <li><a href="contacto.html" class="navegador">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>    
-    <main class="main">
-        <section class="encabezado">
-            <h1 class="titulopagina">Nuestra historia</h1>
-            <h2 class="subtitulopagina">700 años de educacion mágica</h2>
-            <img src="../assets/img/historia/encabezado.jpeg" alt="Fundadores de Hogwarts" class="imgencabezado">
+    <header class="encIndex sticky-top">
+        <section class="headerNav d-flex">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <div class="container-fluid">
+                    <a href="../index.html"><img src="../assets/img/inicio.png" alt="inicio" class="navbar-brand logo"></a>
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon custom-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link anclasNavegador" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link anclasNavegador" href="#">HISTORIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link anclasNavegador" href="./inscripciones.html">INSCRIPCIONES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link anclasNavegador" href="./padres.html">PADRES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link anclasNavegador" href="./contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </section>
-        <section class="contenedorfundadores">
-            <h2 class="subtitulo">Fundadores de Hogwarts</h2>
-            <div class="fundadores">
-                <img src="../assets/img/historia/godricgryffindor-removebg.png" alt="Godric Gryffindor" class="imgfundadores">
-                <p>Godric Gryffindor</p>
-            </div>
-            
-            <div class="fundadores">
-                <img src="../assets/img/historia/helgahufflepuff-removebg-preview.png" alt="Helga Hufflepuff" class="imgfundadores">
-                <p>Helga Hufflepuff</p>
-            </div>
-            
-            <div class="fundadores">
-                <img src="../assets/img/historia/rowenaravenclaw-removebg-preview.png" alt="Rowena Ravenclaw" class="imgfundadores">
-                <p>Rowena Ravenclaw</p>
-            </div>
-            
-            <div class="fundadores">
-                <img src="../assets/img/historia/salazarslytherin-removebg-preview.png" alt="Salazar Slytherin" class="imgfundadores">
-                <p>Salazar Slytherin</p>  
-            </div>
-            <h3 class="subtitulo">La copa de casas</h3>
-            <p class="texto">En el corazón de la vida estudiantil en Hogwarts se encuentra la prestigiosa Copa de las Casas, una emocionante competencia que une a los estudiantes en un espíritu de lealtad y excelencia. Cada casa, ya sea Gryffindor, Hufflepuff, Ravenclaw o Slytherin, compite durante todo el año en desafíos mágicos y académicos para ganar puntos valiosos. La casa que acumule la mayor cantidad de puntos al final del año será galardonada con la codiciada Copa de la Casa. ¡Prepárate para vivir momentos emocionantes, desafíos asombrosos y el espíritu inigualable de la competencia mágica en Hogwarts! ¡Que comiencen los juegos!</p>
-            <img src="../assets/img/historia/cdc1.jpg" alt="Juegos de la copa de casas" class="imgcopadecasas">
+    </header> 
+    <main class="container-fluid p-0">
+        <section class="encabezado w-100 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="tituloPagina display-1">Nuestra historia</h1>
+            <h2 class="subtituloPagina text-center display-5 text-white fw-bold">700 años de educacion mágica</h2>
+            <img src="../assets/img/historia/encabezado.jpeg" alt="Escaleras Magicas Movedizas de Hogwarts" class="encabezado__img w-100 position-absolute top-0">
         </section>
-        <!--Esta seccion la agregue despues de la clase numero tres, para practicar las tarjetas-->
-        <section class="contenedortarjetas">
-            <h3 class="titulotarjetas">Alumnos que pasaron a la historia</h3>
-            <section class="tarjetasmagos">
-                <img src="../assets/img/historia/tarjetas/409093e8f8118e554f81ea37ddc47766.jpg" alt="Gellert Grindelwald, mago oscuro" class="imgtarjetas">
-                <h4>Gellert Grindelwald</h4>
-                <p>Conocido por ser un poderoso mago oscuro y por sus ideales controvertidos sobre la supremacía de los magos. Fue un estudiante de Slytherin antes de convertirse en uno de los mayores antagonistas en la historia mágica.</p>
-            </section>
-            <section class="tarjetasmagos">
-                <img src="../assets/img/historia/tarjetas/merlin.jpg" alt="Merlin, mago y hechicero legendario" class="imgtarjetas">
-                <h4>Merlín</h4>
-                <p>Un legendario mago y hechicero de Gryffindor, conocido por sus habilidades excepcionales en la magia. Se le atribuyen numerosos logros, y su nombre es sinónimo de grandeza en el mundo mágico.</p>
-            </section>
-            <section class="tarjetasmagos">
-                <img src="../assets/img/historia/tarjetas/newt.jpg" alt="Newt Scamander, escritor y magozoologo" class="imgtarjetas">
-                <h4>Newt Scamander</h4>
-                <p>Autor de "Animales fantásticos y dónde encontrarlos", Newt es un magizoólogo de Hufflepuff que ha contribuido significativamente al estudio y la protección de criaturas mágicas en el mundo mágico.</p>
-            </section>
-            <section class="tarjetasmagos">
-                <img src="../assets/img/historia/tarjetas/cedric.jpg" alt="Cedric Diggory, fallecido en el Torneo de los Tres Magos" class="imgtarjetas">
-                <h4>Cedric Diggory</h4>
-                <p>Reconocido por su valentía y caballerosidad, Cedric Diggory fue un estudiante destacado de Hufflepuff en Hogwarts. Participó en el Torneo de los Tres Magos y dejó una huella imborrable en la historia mágica por su nobleza y sacrificio.</p>
-            </section>
+        <section class="divBackground contenedorfundadores w-100 my-4">
+            <h2 class="purple text-center fw-bold text-white p-3">Fundadores de Hogwarts</h2>
+            <div class="p-3 container-xxl mx-auto row w-100 justify-content-around text-white fw-bold text-center">
+                <div class="fundadores col-sm-6 col-md-3">
+                    <img src="../assets/img/historia/godricgryffindor-removebg.png" alt="Godric Gryffindor" class="imgFundadores">
+                    <p>Godric Gryffindor</p>
+                </div>
+                <div class="fundadores col-sm-6 col-md-3">
+                    <img src="../assets/img/historia/helgahufflepuff-removebg-preview.png" alt="Helga Hufflepuff" class="imgFundadores">
+                    <p>Helga Hufflepuff</p>
+                </div>   
+                <div class="fundadores col-sm-6 col-md-3">
+                    <img src="../assets/img/historia/rowenaravenclaw-removebg-preview.png" alt="Rowena Ravenclaw" class="imgFundadores">
+                    <p>Rowena Ravenclaw</p>
+                </div>
+                <div class="fundadores col-sm-6 col-md-3">
+                    <img src="../assets/img/historia/salazarslytherin-removebg-preview.png" alt="Salazar Slytherin" class="imgFundadores">
+                    <p>Salazar Slytherin</p>  
+                </div>
+            </div>
+            <h3 class="fw-bolder text-white">La copa de casas</h3>
+            <p class="text-white">En el corazón de la vida estudiantil en Hogwarts se encuentra la prestigiosa Copa de las Casas, una emocionante competencia que une a los estudiantes en un espíritu de lealtad y excelencia. Cada casa, ya sea Gryffindor, Hufflepuff, Ravenclaw o Slytherin, compite durante todo el año en desafíos mágicos y académicos para ganar puntos valiosos. La casa que acumule la mayor cantidad de puntos al final del año será galardonada con la codiciada Copa de la Casa. ¡Prepárate para vivir momentos emocionantes, desafíos asombrosos y el espíritu inigualable de la competencia mágica en Hogwarts! ¡Que comiencen los juegos!</p>
+            </div>
+        </section>
+        <section class="tarjetas w-75 p-5 my-5 mx-auto">
+            <h3 class="tituloTarjetas text-center fs-1">Alumnos que pasaron a la historia</h3>
+            <div class="contenedor">
+                <section class="tarjetasMagos">
+                    <img src="../assets/img/historia/tarjetas/409093e8f8118e554f81ea37ddc47766.jpg" alt="Gellert Grindelwald, mago oscuro" class="imgTarjetas">
+                    <h4>Gellert Grindelwald</h4>
+                    <p>Conocido por ser un poderoso mago oscuro y por sus ideales controvertidos sobre la supremacía de los magos. Fue un estudiante de Slytherin antes de convertirse en uno de los mayores antagonistas en la historia mágica.</p>
+                </section>
+                <section class="tarjetasMagos">
+                    <img src="../assets/img/historia/tarjetas/merlin.jpg" alt="Merlin, mago y hechicero legendario" class="imgTarjetas">
+                    <h4>Merlín</h4>
+                    <p>Un legendario mago y hechicero de Gryffindor, conocido por sus habilidades excepcionales en la magia. Se le atribuyen numerosos logros, y su nombre es sinónimo de grandeza en el mundo mágico.</p>
+                </section>
+                <section class="tarjetasMagos">
+                    <img src="../assets/img/historia/tarjetas/newt.jpg" alt="Newt Scamander, escritor y magozoologo" class="imgTarjetas">
+                    <h4>Newt Scamander</h4>
+                    <p>Autor de "Animales fantásticos y dónde encontrarlos", Newt es un magizoólogo de Hufflepuff que ha contribuido significativamente al estudio y la protección de criaturas mágicas en el mundo mágico.</p>
+                </section>
+                <section class="tarjetasMagos">
+                    <img src="../assets/img/historia/tarjetas/cedric.jpg" alt="Cedric Diggory, fallecido en el Torneo de los Tres Magos" class="imgTarjetas">
+                    <h4>Cedric Diggory</h4>
+                    <p>Reconocido por su valentía y caballerosidad, Cedric Diggory fue un estudiante destacado de Hufflepuff en Hogwarts. Participó en el Torneo de los Tres Magos y dejó una huella imborrable en la historia mágica por su nobleza y sacrificio.</p>
+                </section>
+            </div>
         </section>
     </main>
-    <footer class="footer">
-        <section class="contenedorfooter">
-            <h4 class="subtitulofooter">¡Hable con la secretaría!</h4>
+    <footer>
+        <section class="contenedorFooter">
+            <h4 class="subtituloFooter">¡Hable con la secretaría!</h4>
             <i class="fa-solid fa-phone" class="icono"></i>
             <p class="texto">+44 (0) 20 3427 7770</p>
             <i class="fa-solid fa-envelope" class="icono"></i>
@@ -88,21 +108,27 @@
             <p class="texto">Studio Tour Dr, Leavesden, Watford WD25 7LR</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.365758839035!2d-0.4181464999999999!3d51.68975149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876402ee3f63599%3A0x2c0152fe0b4ec546!2sStudio%20Tour%20Dr%2C%20Leavesden%2C%20Watford%20WD25%207LR%2C%20Reino%20Unido!5e0!3m2!1ses!2sbr!4v1707154266316!5m2!1ses!2sbr" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
         </section>
-        <section class="contendedorredes">
-            <h4 class="subtituloredes">Nuestras redes sociales</h4>
-            <a href="https://www.instagram.com/hogwartsofficial_/?hl=es" target="_blank" class="iconosredes">
+        <section class="contendedorRedes">
+            <h4 class="subtituloRedes">Nuestras redes sociales</h4>
+            <a href="https://www.instagram.com/hogwartsofficial_/?hl=es" target="_blank" class="iconosRedes">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="iconosredes">
+            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="iconosRedes">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
-            <a href="https://www.facebook.com/HPHogwartsMystery/" target="_blank" class="iconosredes">
+            <a href="https://www.facebook.com/HPHogwartsMystery/" target="_blank" class="iconosRedes">
                 <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="https://www.youtube.com/@harrypotter" target="_blank" class="iconosredes">
+            <a href="https://www.youtube.com/@harrypotter" target="_blank" class="iconosRedes">
                 <i class="fa-brands fa-youtube"></i>
             </a>
         </section>
+        <div class="iconoWhatsapp">
+            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="icono">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
