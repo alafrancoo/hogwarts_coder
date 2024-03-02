@@ -41,47 +41,52 @@
             </nav>
         </section>
     </header> 
-    <main class="container-fluid w-100 d-flex flex-column justify-content-end align-items-center">
+    <main class=" container-fluid w-100 d-flex flex-column justify-content-end align-items-center">
         <section class="encabezado w-100 d-flex flex-column justify-content-center align-items-center">
             <h1 class="tituloPagina display-1">Contacto</h1>
             <img src="../assets/img/contacto/contacto.jpg" alt="Dumbledore atendiendo llamados" class="encabezado__img w-100 position-absolute top-0 left-0">
         </section>
-            <section class="contenedorContacto container-xxl">
-                <h3 class="subtitulo">Asistencia para alumnos</h3>
+        <div class="container-xxl d-flex justify-content-center m-3 contenedorContactoFlex flex-wrap">
+            <section class="contenedorContacto d-flex flex-column align-items-center p-2 col-12">
+                <h3 class="subtitulo fs-1 fw-bold">Asistencia para alumnos</h3>
                 <form action="" method="post">
-                    <div>
-                        <label for="name" class="formularioTexto">Ingrese su nombre completo</label>
-                        <input type="text"  id="name" name="name" required class="inputs" placeholder="Nombre y Apellido">
+                    <div class="d-flex">
+                        <div class="text-center mb-3 text-black font-monospace m-4">
+                            <label for="name" class="d-block my-2">Ingrese su nombre completo</label>
+                            <input type="text"  id="name" name="name" required class="inputs" placeholder="Nombre y Apellido">
+                        </div>
+                        <div class="text-center mb-3 text-black font-monospace m-4">
+                            <label for="email" class="d-block my-2">Ingrese su correo electrónico</label>
+                            <input type="email" id="email" name="email"required class="inputs"placeholder="Dirección de email">
+                        </div>
                     </div>
-                    <div>
-                        <label for="email" class="formularioTexto">Ingrese su correo electrónico</label>
-                        <input type="email" id="email" name="email"required class="inputs"placeholder="Dirección de email">
-                    </div>
-                    <div>
-                        <label for="comentario" class="formularioTexto">Envíenos su duda</label>
+                    <div class="text-center mb-3 text-black font-monospace">
+                        <label for="comentario" class="d-block my-2">Envíenos su duda</label>
                         <textarea name="comentario" id="comentario" cols="30" rows="10" required class="inputs"placeholder="Ingrese un motivo de contacto"></textarea>
                     </div>
-                    <div>
-                        <input type="reset" value="Limpiar" class="botones">
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar" class="botones">
+                    <div class="d-flex flex-row justify-content-evenly">
+                        <div>
+                            <input type="reset" value="Limpiar" class="botones mt-2">
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar" class="botones mt-2">
+                        </div>
                     </div>
                 </form>
             </section>
-            <div class="contenedorFilas">
-                <section class="contenedorContacto">
-                    <h3 class="subtitulo">Telefono y correo electrónico de contacto</h3>
-                    <p class="texto">+44 (0) 20 3427 777</p>
-                    <p class="texto">support@wbd.com</p>
+            <div class="">
+                <section class="">
+                    <h3 class="subtitulo my-2 fw-bold">Telefono y correo electrónico de contacto</h3>
+                    <p class="text-black fs-5 my-2">+44 (0) 20 3427 777</p>
+                    <p class="text-black fs-5 my-2">support@wbd.com</p>
                 </section>
-                <section class="contenedorContacto">
-                    <h3 class="subtitulo">Para consultas academicas</h3>
-                    <p class="texto">albusdumbledore@hogwarts.com.mg</p>
-                    <p class="texto">profesoraminervamcgonagall@hogwarts.com.mg</p>
+                <section class="">
+                    <h3 class="subtitulo my-2 fw-bold">Para consultas academicas</h3>
+                    <p class="text-black fs-5 my-2">albusdumbledore@hogwarts.com.mg</p>
+                    <p class="text-black fs-5 my-2">profesoraminervamcgonagall@hogwarts.com.mg</p>
                 </section>
-                <section class="contenedorContacto">
-                    <h3 class="subtitulo">¿Donde nos encontramos?</h3>
+                <section class="">
+                    <h3 class="subtitulo fw-bold">¿Donde nos encontramos?</h3>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.365758839035!2d-0.4181464999999999!3d51.68975149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876402ee3f63599%3A0x2c0152fe0b4ec546!2sStudio%20Tour%20Dr%2C%20Leavesden%2C%20Watford%20WD25%207LR%2C%20Reino%20Unido!5e0!3m2!1ses!2sbr!4v1707166218267!5m2!1ses!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
                 </section>
             </div>

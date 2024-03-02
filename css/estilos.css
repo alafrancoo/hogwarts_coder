@@ -187,59 +187,32 @@ body {
         /*Aqui van los estilos especificos de la pagina contacto*/
 
         .contenedorContactoFlex {
-            display: flex;
-            justify-content: center ;
-            .contenedorContacto {
-                margin: 30px;
-                padding: 15px;
-                .formularioTexto {
+            .formularioTexto {
+                color: #2d3250;
+            }
+            .botones{
+                border-style: none;
+            }
+            /*aca intente darle estilo a los inputs y me gusto el resultado por lo que lo deje, pero el placeholder desaparece por mas de que le ponga un color*/
+            .inputs {
+                background-color: #676f9d;
+                &:focus{
+                    background-color: #fff;
+                    box-shadow: 0px 0px 20px 0px #676f9d inset;
                     color: #2d3250;
                     font-weight: 600;
-                    display: block;
-                    margin: 10px 0px 10px 0px;
-                }
-                .botones{
-                    border-style: none;
-                    margin-top: 10px;
-                }
-                /*aca intente darle estilo a los inputs y me gusto el resultado por lo que lo deje, pero el placeholder desaparece por mas de que le ponga un color*/
-                .inputs {
-                    background-color: #676f9d;
-                    color: #fff;
-                    box-shadow: none;
-                    &:focus{
-                        background-color: #fff;
-                        box-shadow: 0px 0px 20px 0px #676f9d inset;
-                        color: #2d3250;
-                        font-weight: 600;
-                        border: 1px solid;
-                    }
-                }
-                
-                .subtitulo {
-                    color: #2d3250;
-                    font-size: 2rem;
-                }    
-                .texto {
-                    font-size: 1.5rem;
-                    margin-top: 20px;
-                    font-weight: 600;
-                }
-                .mapa {
-                    margin-top: 20px;
-                    border: 15px #d5a707 solid;
+                    border: 1px solid;
                 }
             }
-            .contenedorFilas {
-                flex-direction: column;
+            .subtitulo {
+                color: #2d3250;
+            }
+            .mapa {
+               border: 15px #d5a707 solid;
             }
         }
-            
-
     }
-
-
-
+            
     footer {
         background-color: #2d3250;
         color: #fff;
