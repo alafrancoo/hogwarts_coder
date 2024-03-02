@@ -210,6 +210,9 @@ body {
             .mapa {
                border: 15px #d5a707 solid;
             }
+            .divconta {
+                box-sizing: content-box;
+            }
         }
     }
             
