@@ -10,60 +10,76 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header class="encIndex sticky-top">
-        <section class="headerNav d-flex">
-            <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <div class="container-fluid">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md py-0">
+            <div class="container-fluid d-flex">
+                <div class="container-fluid d-flex justify-content-between align-items-center">
                     <a href="../index.html"><img src="../assets/img/inicio.png" alt="inicio" class="navbar-brand logo"></a>
                     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon custom-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link anclasNavegador" aria-current="page" href="../index.html">INICIO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link anclasNavegador" href="./historia.html">HISTORIA</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link anclasNavegador" href="#">INSCRIPCIONES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link anclasNavegador" href="./padres.html">PADRES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link anclasNavegador" href="./contacto.html">CONTACTO</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-            </nav>
-        </section>
-    </header>     
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 w-100">
+                            <!-- La clase active  no me dejaba darle mis estilos propios a ese nav item en particular. busque donde se definia la clase en el archivo bootstrap.css el problema y no encontre nada, asi que la saque -->
+                        <li class="nav-item px-3">
+                            <a class="nav-link anclasNavegador" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link anclasNavegador" href="./historia.html">HISTORIA</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link anclasNavegador" href="#">INSCRIPCIONES</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link anclasNavegador" href="./padres.html">PADRES</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link anclasNavegador" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>  
     <main class="container-fluid w-100 d-flex flex-column justify-content-end align-items-center">
         <section class="encabezado w-100 d-flex flex-column justify-content-center align-items-center">
             <h1 class="tituloPagina display-1">Inscripciones 2025</h1>
             <img src="../assets/img/inscripciones/encabezadp.jpg" alt="Cartas de admision de hogwarts" class="encabezado__img w-100 position-absolute top-0">
         </section>
         <section class="inscripciones p-4">
-            <h2 class="display-5 fw-bold text-center">¿Ya recibiste tu lechuza?</h2>
-            <div class="container-xxl row align-items-start justify-content-around my-5">
-                <div class="col-md-8 col-sm-12">
+            <h2 class="display-5 fw-bold text-center tituloInscripciones">¿Ya recibiste tu lechuza?</h2>
+            <div class="container-xxl row align-items-center justify-content-around my-5">
+                <div class="col-md-6 col-sm-12">
                     <h3 class="subtituloFelicitaciones">Si es así, ¡Felicitaciones!</h3>
                     <p class="text-black my-3">¡Es un placer inmenso felicitarte por recibir tu carta de invitación para unirte a la increíble experiencia de Hogwarts School of Witchcraft and Wizardry! Estamos encantados de dar la bienvenida a un nuevo miembro a nuestra comunidad mágica.
                     Para formalizar tu ingreso, simplemente sigue las instrucciones adjuntas en tu carta. ¡No olvides empacar tus artículos necesarios para la escuela, incluyendo tu varita mágica!
                     Si alguna vez surge alguna pregunta durante este emocionante proceso, no dudes en visitar nuestro enlace de Contacto Hogwarts, podrás contactarnos directamente.
                     </p>
-                    <a href="contacto.html" class="botones">Más información</a>
+                    <a href="contacto.html" class="botones d-inline-block">Más información</a>
                 </div>
+                
                 <div class="tarjetaError col-md-4 col-sm-12 my-2 p-3">
                     <h3 class="text-white fw-bold">¿Crees que pudo haber un error?</h3>
                     <p class="text-white">
                     Queremos asegurarte que entendemos lo emocionante que es recibir esta carta especial y que lamentamos cualquier confusión. Sin embargo, es importante señalar que Hogwarts está reservado exclusivamente para aquellos que han demostrado habilidades mágicas. Si no has recibido tu carta, es posible que la magia aún no haya despertado en ti.
                     Si estás seguro/a de que ha habido un error, por favor, contáctanos a través de nuestro enlace de Contacto Hogwarts. Nuestro equipo estará encantado de investigar tu caso.
                     </p>
-                    <a href="contacto.html" class="botones botonesInversos">Más información</a>
+                    <a href="contacto.html" class="botonesInversos d-inline-block">Más información</a>
+                </div>
+                <div>
+                    <h4 class="subtituloFelicitaciones my-3">Lista de Materiales</h4>
+                    <ul class="text-black">
+                        <li><strong>Varita mágica:</strong> Un elemento esencial para cualquier estudiante en Hogwarts. Deberás adquirirla en Ollivanders, la tienda de varitas en el Callejón Diagon.</li>
+                        <li><strong>Caldero (estándar tamaño 2):</strong> Necesitarás un caldero para tus clases de Pociones. Puedes encontrarlo en Tienda de Calderos, también en el Callejón Diagon.</li>
+                        <li><strong>Lechuzas o sapos para mascotas:</strong> Aunque no es estrictamente necesario, muchos estudiantes optan por tener una mascota. Puedes conseguir una lechuza en Lechucería o un sapo en la tienda de animales mágicos.</li>
+                        <li><strong>Uniforme escolar:</strong> Tres juegos de túnicas, un sombrero puntiagudo y guantes protectores para el invierno.</li>
+                        <li><strong>Libros de texto estándar:</strong> Puedes adquirirlos en Flourish y Blotts, la librería en el Callejón Diagon. Asegúrate de tener al menos los libros requeridos para tu año.</li>
+                        <li><strong>Pergamino, tinta y plumas:</strong> Para tus clases de escritura y hechizos.</li>
+                        <li><strong>Kit de Aparición (opcional):</strong> Aunque solo es necesario a partir del quinto año, algunos estudiantes optan por obtenerlo temprano.</li>
+                        <li><strong>Báscula de brujas para pesar las varitas:</strong> Asegúrate de tenerla contigo al comprar tu varita.</li>
+                    </ul>
+                    <p>Recuerda revisar tu lista de libros de texto específicos para tu año y cualquier artículo adicional que pueda ser solicitado por tus profesores. ¡Buena suerte en tu primer año en Hogwarts!</p>
                 </div>
             </div>
         </section>
@@ -108,36 +124,46 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <section class="contenedorFooter">
-            <h4 class="subtituloFooter">¡Hable con la secretaría!</h4>
-            <i class="fa-solid fa-phone" class="icono"></i>
-            <p class="texto">+44 (0) 20 3427 7770</p>
-            <i class="fa-solid fa-envelope" class="icono"></i>
-            <p class="texto">support@wbd.com</p>
-            <i class="fa-solid fa-location-dot" class="icono"></i>
-            <p class="texto">Studio Tour Dr, Leavesden, Watford WD25 7LR</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.365758839035!2d-0.4181464999999999!3d51.68975149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876402ee3f63599%3A0x2c0152fe0b4ec546!2sStudio%20Tour%20Dr%2C%20Leavesden%2C%20Watford%20WD25%207LR%2C%20Reino%20Unido!5e0!3m2!1ses!2sbr!4v1707154266316!5m2!1ses!2sbr" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
-        </section>
-        <section class="contendedorRedes">
-            <h4 class="subtituloRedes">Nuestras redes sociales</h4>
-            <a href="https://www.instagram.com/hogwartsofficial_/?hl=es" target="_blank" class="iconosRedes">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="iconosRedes">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="https://www.facebook.com/HPHogwartsMystery/" target="_blank" class="iconosRedes">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.youtube.com/@harrypotter" target="_blank" class="iconosRedes">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-        </section>
-        <div class="iconoWhatsapp">
-            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="icono">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
+    <footer class="mx-0 text-white mt-5 p-4 d-flex justify-content-center">
+        <div class="container-xl row justify-content-around">
+            <section class="d-flex flex-column col-sm-12 col-md-6">
+                <h4 class="">¡Hable con la secretaría!</h4>
+                <div class="my-2">
+                    <i class="fa-solid fa-phone" class="icono"></i>
+                    <p class="d-inline">+44 (0) 20 3427 7770</p>
+                </div>
+                <div class="my-2">
+                    <i class="fa-solid fa-envelope" class="icono"></i>
+                    <p class="d-inline">support@wbd.com</p>
+                </div>
+                <div class="my-2">
+                    <i class="fa-solid fa-location-dot" class="icono"></i>
+                    <p class="d-inline">Studio Tour Dr, Leavesden, Watford WD25 7LR</p>
+                </div> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.365758839035!2d-0.4181464999999999!3d51.68975149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876402ee3f63599%3A0x2c0152fe0b4ec546!2sStudio%20Tour%20Dr%2C%20Leavesden%2C%20Watford%20WD25%207LR%2C%20Reino%20Unido!5e0!3m2!1ses!2sbr!4v1707154266316!5m2!1ses!2sbr" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+            </section>
+            <section class="contendedorRedes col-sm-12 col-md-6 d-flex justify-content-center flex-column mt-4">
+                <h4 class="text-center">Nuestras redes sociales</h4>
+                <div class="d-flex justify-content-around flex-wrap">
+                    <a href="https://www.instagram.com/hogwartsofficial_/?hl=es" target="_blank" class="iconosRedes text-white m-2 display-1">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="iconosRedes text-white m-2 display-1">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/HPHogwartsMystery/" target="_blank" class="iconosRedes text-white m-2 display-1">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@harrypotter" target="_blank" class="iconosRedes text-white m-2 display-1">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </section>
+            <div class="iconoWhatsapp bg-white position-fixed bottom-0 end-0 m-2 p-3 d-flex justify-content-center align-items-center rounded-circle">
+                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="icono">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

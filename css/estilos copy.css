@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    header {
+        .headerNav {
+            background-color: #2d325095;
+            height: 60px;
+            .logo {
+                width: 35px;
+                margin: 7px 0px 7px 20px;
+            }
+            .anclasNavegador{
+                color: #d5a707;
+                font-weight: 800;               
+                &:hover{
+                text-decoration: underline 3px;     
+                }
+            } 
+            .custom-toggler {
+                background-color: #d5a707; /* Color del borde del botón */
+              }
+              
+            .custom-toggler-icon {
+                background-color: #d5a707; /* Color del icono de hamburguesa */
+            }       
+        }
+    }   
+ 
+        
+
+
+
+    main {
+        .encabezado {
+            height: 300px;
+            .tituloPagina {
+                font-weight: 900;
+                color: #d5a707;
+            }
+
+            .subtituloPagina {
+                font-weight: 800;
+            }        
+            .encabezado__img {
+                z-index: -1;
+                height: 360px;
+                object-fit: cover;
+            }
+        }     
+        .botones {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #d5a707;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-weight: 600;
+            border-radius: 13px 13px 13px 13px;
+            &:hover {
+                background-color: #ffffff;
+                color: #d5a707;  
+                border-width: 3px;
+                border-style: solid;
+            }
+        }        
+        .botonesInversos {
+            background-color: #ffffff;
+            color: #d5a707;  
+            border-width: 3px;
+            border-style: solid;
+            &:hover {
+                background-color: #d5a707;
+                color: #fff;
+            }
+        }
+        
+        /* Aqui van los estilos especificos de la pagina index*/
+
+        .bodyIndex {
+            .tituloNoticias {
+                font-weight: 700;
+            }    
+            .subtitulosIndex {
+            font-weight: 800;
+            color: #2d3250;
+            }    
+         }
+        
+
+        /* Aqui van los estilos especificos de la pagina historia*/
+        .divBackground {
+            background-image: url(../assets/img/historia/cdc1.jpg);
+        }
+        .imgFundadores {
+            border-radius: 50%;
+            width: 170px;
+        }  
+        .tarjetas {
+            background-color: #2d3250;
+            border-radius: 108px;
+            .tituloTarjetas {
+                color: #d5a707;
+            }
+            .magosDiv {
+                .tarjetasMagos {
+                    background-color: #d5a707;
+                    margin: 35px auto;
+                    padding: 15px;
+                    border-radius: 16px;
+                    .imgTarjetas {
+                        height: 340px;
+                        object-fit: cover;
+                        width: 95%;
+                        margin: 7px;
+                    }
+                }
+            }
+        }
+
+        /*Aqui van los estilos especificos de la pagina inscripciones*/
+        .inscripciones {
+            color: #2d3250;
+                .subtituloFelicitaciones {
+                        color: #2d3250;
+                        font-weight: 800;
+                }
+                .tarjetaError {
+                    background-color: #424769;
+                    .subtituloError {
+                        font-weight: 700;
+                    }
+                }
+            }
+        
+
+        .galeria {
+            .subtitulo {
+                color: #2d3250;
+                font-weight: 800;
+            }
+            .contenedorGaleria {
+                row-gap: 40px;
+                .imgGaleria {
+                    width: 400px;
+                    height: 200px;
+                    box-shadow: 0px 0px 26px -5px rgba(0,0,0,0.75);
+                    
+                    img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        /*Aqui van los estilos especificos de la pagina padres*/
+
+            .contenedorCorreo {
+                z-index: -1;
+                background-color: #2d3250;
+                .imgCorreo {
+                    height: 360px;
+                    object-fit: cover;
+                }
+            }
+            .contenedorNoticias {
+                .subtitulo {
+                    color: #2d3250;
+                }
+                .noticia {
+                    .imgNoticias {
+                        width: 100%;
+                        height: 340px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        
+
+        /*Aqui van los estilos especificos de la pagina contacto*/
+
+        .contenedorContactoFlex {
+            .formularioTexto {
+                color: #2d3250;
+            }
+            .botones{
+                border-style: none;
+            }
+            /*aca intente darle estilo a los inputs y me gusto el resultado por lo que lo deje, pero el placeholder desaparece por mas de que le ponga un color*/
+            .inputs {
+                background-color: #676f9d;
+                &:focus{
+                    background-color: #fff;
+                    box-shadow: 0px 0px 20px 0px #676f9d inset;
+                    color: #2d3250;
+                    font-weight: 600;
+                    border: 1px solid;
+                }
+            }
+            .subtitulo {
+                color: #2d3250;
+            }
+            .mapa {
+               border: 15px #d5a707 solid;
+            }
+            .divconta {
+                box-sizing: content-box;
+            }
+        }
+    }
+            
+    footer {
+        background-color: #2d3250;
+        color: #fff;
+        padding: 20px;
+        margin-top: 40px;
+
+        .contenedorFooter{
+            .subtituloFooter{
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+            .texto {
+                display: inline;
+                margin-right: 20px;
+            }
+            .mapa {
+                margin-top: 10px;
+                display: block;
+            }
+        }        
+        .subtituloRedes {
+            margin-top: 13px;
+            font-size: 1.2rem;
+        }    
+        .iconosRedes {
+            margin-top: 7px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        .iconoWhatsapp {
+            border-radius: 50%;
+            display: flex;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            .icono {
+                text-decoration: none;
+                color: #d5a707;
+                font-size: 2rem;
+            }
+        }
+    }
+}

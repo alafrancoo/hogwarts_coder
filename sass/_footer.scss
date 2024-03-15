@@ -1,0 +1,16 @@
+footer {
+    background-color: $darker-violet;
+    .iconosRedes {
+        text-decoration: none;
+    }
+    .iconoWhatsapp {
+        width: 40px;
+        height: 40px;
+        .icono {
+            text-decoration: none;
+            color: $golden-yellow;
+            //Dejo este estilo porque no quiero que el icono se achique cuando sea vista mobile
+            font-size: 2rem;
+        }
+    }
+}
