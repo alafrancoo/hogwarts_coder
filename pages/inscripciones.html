@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¿Interesado en unirte a la familia de Hogwarts? Descubre cómo puedes inscribirte en nuestro prestigioso colegio de magia y hechicería. Obtén detalles sobre el proceso de admisión, requisitos y fechas importantes. ¡Tu viaje en Hogwarts está a punto de comenzar!">
+    <meta name="keywords" content="Inscripciones Hogwarts, Colegio de magia, Proceso de admisión, Requisitos de admisión, Fechas importantes, Inscripciones, Admisión, Hogwarts">
     <script src="https://kit.fontawesome.com/e1590b4fdf.js" crossorigin="anonymous"></script>
-    <title>Hogwarts - Inscripciones</title>
+    <title>Inscripciones | Hogwarts</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/imagehover.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -21,7 +24,6 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0 w-100">
-                            <!-- La clase active  no me dejaba darle mis estilos propios a ese nav item en particular. busque donde se definia la clase en el archivo bootstrap.css el problema y no encontre nada, asi que la saque -->
                         <li class="nav-item px-3">
                             <a class="nav-link anclasNavegador" aria-current="page" href="../index.html">INICIO</a>
                         </li>
@@ -47,24 +49,21 @@
             <h1 class="tituloPagina display-1">Inscripciones 2025</h1>
             <img src="../assets/img/inscripciones/encabezadp.jpg" alt="Cartas de admision de hogwarts" class="encabezado__img w-100 position-absolute top-0">
         </section>
-        <section class="inscripciones p-4">
+        <section class="p-4">
             <h2 class="display-5 fw-bold text-center tituloInscripciones">¿Ya recibiste tu lechuza?</h2>
             <div class="container-xxl row align-items-center justify-content-around my-5">
                 <div class="col-md-6 col-sm-12">
                     <h3 class="subtituloFelicitaciones">Si es así, ¡Felicitaciones!</h3>
-                    <p class="text-black my-3">¡Es un placer inmenso felicitarte por recibir tu carta de invitación para unirte a la increíble experiencia de Hogwarts School of Witchcraft and Wizardry! Estamos encantados de dar la bienvenida a un nuevo miembro a nuestra comunidad mágica.
-                    Para formalizar tu ingreso, simplemente sigue las instrucciones adjuntas en tu carta. ¡No olvides empacar tus artículos necesarios para la escuela, incluyendo tu varita mágica!
-                    Si alguna vez surge alguna pregunta durante este emocionante proceso, no dudes en visitar nuestro enlace de Contacto Hogwarts, podrás contactarnos directamente.
+                    <p class="text-black my-3">¡Es un placer inmenso felicitarte por recibir tu carta de invitación para unirte a la increíble experiencia de <span class="spanViolet">Hogwarts School of Witchcraft and Wizardry</span>! Estamos encantados de dar la bienvenida a un nuevo miembro a nuestra comunidad mágica.</p>
+                    <p>Para formalizar tu ingreso, simplemente sigue las <span class="spanViolet">instrucciones adjuntas</span> en tu carta. ¡No olvides empacar tus artículos necesarios para la escuela, incluyendo tu varita mágica!</p>
+                    <p>Si alguna vez surge alguna pregunta durante este emocionante proceso, no dudes en visitar nuestro enlace de <span class="spanViolet">Contacto Hogwarts</span>, podrás contactarnos directamente.
                     </p>
                     <a href="contacto.html" class="botones d-inline-block">Más información</a>
                 </div>
-                
-                <div class="tarjetaError col-md-4 col-sm-12 my-2 p-3">
+                <div class="tarjetaError col-md-4 col-sm-12 my-2 p-3 rounded ">
                     <h3 class="text-white fw-bold">¿Crees que pudo haber un error?</h3>
-                    <p class="text-white">
-                    Queremos asegurarte que entendemos lo emocionante que es recibir esta carta especial y que lamentamos cualquier confusión. Sin embargo, es importante señalar que Hogwarts está reservado exclusivamente para aquellos que han demostrado habilidades mágicas. Si no has recibido tu carta, es posible que la magia aún no haya despertado en ti.
-                    Si estás seguro/a de que ha habido un error, por favor, contáctanos a través de nuestro enlace de Contacto Hogwarts. Nuestro equipo estará encantado de investigar tu caso.
-                    </p>
+                    <p class="text-white">Queremos asegurarte que entendemos lo emocionante que es recibir esta carta especial y que lamentamos cualquier confusión. Sin embargo, es importante señalar que Hogwarts está reservado exclusivamente para aquellos que han demostrado habilidades mágicas. Si no has recibido tu carta, <span class="spanWhite">es posible que la magia aún no haya despertado en ti.</span ></p>
+                    <p class="text-white">Si estás seguro/a de que ha habido un error, por favor, contáctanos a través de nuestro enlace de Contacto Hogwarts. Nuestro equipo estará encantado de investigar tu caso.</p>
                     <a href="contacto.html" class="botonesInversos d-inline-block">Más información</a>
                 </div>
                 <div>
@@ -88,38 +87,81 @@
             <div class="contenedorGaleria container-xxl d-flex flex-wrap mt-4 justify-content-evenly w-100">
                 <div class="imgGaleria">
                     <img src="../assets/img/inscripciones/galeria/galeria1.jpg" alt="Patio de combate" class="w-100 h-100">
+                    <div class="overlay d-flex flex-column justify-content-center p-3">
+                        <h4 class="tittle text-center text-white fw-bold">Patio de Combate</h4>
+                        <p class="description text-center text-white fw-bold">Los estudiantes practican duelos y defensa contra las artes oscuras.</p>
+                    </div>
                 </div>            
                 
                 <div class="imgGaleria">
                     <img src="../assets/img/inscripciones/galeria/galeria2.jpg" alt="Puente conector de edificio sur con edificio norte" class="w-100 h-100">
+                    <div class="overlay d-flex flex-column justify-content-center p-3">
+                        <h4 class="tittle text-center text-white fw-bold">Puente conector de ala sur y norte</h4>
+                        <p class="description text-center text-white fw-bold">Estudiantes y personal pueden desplazarse entre ambos edificios de manera conveniente y segura.</p>
+                    </div>
                 </div>
 
                 <div class="imgGaleria">
                     <img src="../assets/img/inscripciones/galeria/galeria3.jpg" alt="Fuente magica de los deseos" class="w-100 h-100">
+                    <div class="overlay d-flex flex-column justify-content-center p-3">
+                        <h4 class="tittle text-center text-white fw-bold">Fuente Mágica de los Deseos </h4>
+                        <p class="description text-center text-white fw-bold">los miembros de la comunidad escolar tienen la oportunidad de lanzar monedas y expresar sus deseos, confiando en la posibilidad de que la magia los cumpla.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="imgGaleria">
                     <img src="../assets/img/inscripciones/galeria/galeria4.jpg" alt="Patio de recesos" class="w-100 h-100">
+                    <div class="overlay d-flex flex-column justify-content-center p-3">
+                        <h4 class="tittle text-center text-white fw-bold">Patio de recesos</h4>
+                        <p class="description text-center text-white fw-bold">Los estudiantes disfrutan de momentos de descanso entre clases, compartiendo risas y conversaciones mientras exploran el pintoresco entorno del castillo.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="imgGaleria">
                     <img src="../assets/img/inscripciones/galeria/galeria5.jpg" alt="Catedral antigua" class="w-100 h-100">
+                    <div class="overlay d-flex flex-column justify-content-center p-3">
+                        <h4 class="tittle text-center text-white fw-bold">Antigua Catedral</h4>
+                        <p class="description text-center text-white fw-bold">Se encuentra un imponente edificio que emana historia y misterio, siendo un lugar de reunión para ceremonias mágicas y eventos especiales dentro de la comunidad estudiantil y el personal del colegio.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="imgGaleria">
                     <img src="../assets/img/inscripciones/galeria/galeria6.jpg" alt="Casa de el conserje, Hagrid" class="w-100 h-100">
+                    <div class="overlay d-flex flex-column justify-content-center p-3">
+                        <h4 class="tittle text-center text-white fw-bold">Cabaña de Hagrid</h4>
+                        <p class="description text-center text-white fw-bold">En los terrenos de Hogwarts, es un hogar rústico y acogedor donde el guardabosques vive entre criaturas mágicas.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="imgGaleria">
                     <img src="../assets/img/inscripciones/galeria/galeria7.jpg" alt="Estadio de Quidich" class="w-100 h-100">
+                    <div class="overlay d-flex flex-column justify-content-center p-3">
+                        <h4 class="tittle text-center text-white fw-bold">Estadio de Quidich</h4>
+                        <p class="description text-center text-white fw-bold">El escenario de emocionantes partidos entre las casas, con los estudiantes animando desde las gradas mientras el aire vibra con la emoción del juego.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="imgGaleria">
                     <img src="../assets/img/inscripciones/galeria/galeria8.jpg" alt="El viaducto de Glenfinnan" class="w-100 h-100">
+                    <div class="overlay d-flex flex-column justify-content-center p-3">
+                        <h4 class="tittle text-center text-white fw-bold">Viaducto de Glenfinnan</h4>
+                        <p class="description text-center text-white fw-bold">Un impresionante puente que atraviesa un valle escocés, se puede apreciar la majestuosidad de la arquitectura mientras se disfruta de vistas panorámicas de la naturaleza circundante.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="imgGaleria">
                     <img src="../assets/img/inscripciones/galeria/galeria9.jpg" alt="Instalaciones del castillo magico de Hogwarts" class="w-100 h-100">
+                    <div class="overlay d-flex flex-column justify-content-center p-3">
+                        <h4 class="tittle text-center text-white fw-bold">Infraestructura de Hogwarts</h4>
+                        <p class="description text-center text-white fw-bold">Hogwarts combina la magia y la arquitectura para crear un entorno único y acogedor para los estudiantes.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -145,17 +187,17 @@
             <section class="contendedorRedes col-sm-12 col-md-6 d-flex justify-content-center flex-column mt-4">
                 <h4 class="text-center">Nuestras redes sociales</h4>
                 <div class="d-flex justify-content-around flex-wrap">
-                    <a href="https://www.instagram.com/hogwartsofficial_/?hl=es" target="_blank" class="iconosRedes text-white m-2 display-1">
-                        <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/hogwartsofficial_/?hl=es" target="_blank" class="text-white m-2 display-1">
+                        <i class="fa-brands fa-instagram animationInstagram"></i>
                     </a>
-                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="iconosRedes text-white m-2 display-1">
-                        <i class="fa-brands fa-whatsapp"></i>
+                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="text-white m-2 display-1">
+                        <i class="fa-brands fa-whatsapp animationWhatsApp"></i>
                     </a>
-                    <a href="https://www.facebook.com/HPHogwartsMystery/" target="_blank" class="iconosRedes text-white m-2 display-1">
-                        <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.facebook.com/HPHogwartsMystery/" target="_blank" class="text-white m-2 display-1">
+                        <i class="fa-brands fa-facebook animationFacebook"></i>
                     </a>
-                    <a href="https://www.youtube.com/@harrypotter" target="_blank" class="iconosRedes text-white m-2 display-1">
-                        <i class="fa-brands fa-youtube"></i>
+                    <a href="https://www.youtube.com/@harrypotter" target="_blank" class="text-white m-2 display-1">
+                        <i class="fa-brands fa-youtube animationYoutube"></i>
                     </a>
                 </div>
             </section>

@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¿Listo para comenzar tu viaje en Hogwarts? Contáctanos hoy mismo para obtener más información sobre nuestro emblemático colegio de magia. Estamos aquí para responder a todas tus preguntas y ayudarte a dar el primer paso hacia una educación mágica.">
+    <meta name="keywords" content="Contacto Hogwarts, Colegio de magia, Información de contacto, Hogwarts, Educación mágica, Contacto, Preguntas, Información">
     <script src="https://kit.fontawesome.com/e1590b4fdf.js" crossorigin="anonymous"></script>
-    <title>Hogwarts - Contacto</title>
+    <title>Contacto | Hogwarts</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -47,48 +50,50 @@
             <h1 class="tituloPagina display-1">Contacto</h1>
             <img src="../assets/img/contacto/contacto.jpg" alt="Dumbledore atendiendo llamados" class="encabezado__img w-100 position-absolute top-0 left-0">
         </section>
-        <div class="container-xxl d-flex justify-content-center m-3 contenedorContactoFlex flex-wrap">
-            <section class="contenedorContacto d-flex flex-column align-items-center p-2 col-12">
-                <h3 class="subtitulo fs-1 fw-bold">Asistencia para alumnos</h3>
-                <form action="" method="post">
-                    <div class="d-flex">
-                        <div class="text-center mb-3 text-black font-monospace m-4">
-                            <label for="name" class="d-block my-2">Ingrese su nombre completo</label>
-                            <input type="text"  id="name" name="name" required class="inputs" placeholder="Nombre y Apellido">
+        <div class="container-xxl d-flex justify-content-center m-3 flex-wrap">
+            <div class="container-fluid">
+                <form class="formContac mx-auto my-5 ">
+                    <h4 class="formTittles text-center text-white">Asistencia para alumnos</h4>
+                    <div>
+                        <div class="my-3">
+                            <label for="exampleInputEmail1" class="formTittles text-white">Nombre completo</label>
+                            <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" required>
                         </div>
-                        <div class="text-center mb-3 text-black font-monospace m-4">
-                            <label for="email" class="d-block my-2">Ingrese su correo electrónico</label>
-                            <input type="email" id="email" name="email"required class="inputs"placeholder="Dirección de email">
+                        <div class="my-3">
+                            <label for="exampleInputPassword1" class="formTittles text-white">Correo electrónico</label>
+                            <input type="email" class="form-control"  id="email" name="email" required>
                         </div>
                     </div>
-                    <div class="text-center mb-3 text-black font-monospace">
-                        <label for="comentario" class="d-block my-2">Envíenos su duda</label>
-                        <textarea name="comentario" id="comentario" cols="30" rows="10" required class="inputs"placeholder="Ingrese un motivo de contacto"></textarea>
+                    <div>
+                        <label for="comentario" class="formTittles text-white">Envíenos su duda</label>
+                        <textarea name="comentario" id="comentario" required class="form-control"></textarea>
                     </div>
-                    <div class="d-flex flex-row justify-content-evenly">
+                    <div class="w-100 d-flex flex-row justify-content-center flex-wrap">
                         <div>
-                            <input type="reset" value="Limpiar" class="botones mt-2">
+                            <input type="reset" value="Limpiar" class="botonesInversos rounded-pill mx-3 mt-4">
                         </div>
                         <div>
-                            <input type="submit" value="Enviar" class="botones mt-2">
+                            <input type="submit" value="Enviar" class="botonesInversos rounded-pill mx-3 mt-4">
                         </div>
                     </div>
-                </form>
-            </section>
-            <div class="container-xl row justify-content-center">
-                <section class="col-md-3 col-sm-12 m-5">
-                    <h3 class="subtitulo my-2 fw-bold">Telefono y correo electrónico de contacto</h3>
-                    <p class="text-black fs-5 my-2">+44 (0) 20 3427 777</p>
-                    <p class="text-black fs-5 my-2">support@wbd.com</p>
-                </section>
-                <section class="col-md-3 col-sm-12 m-5">
-                    <h3 class="subtitulo my-2 fw-bold">Para consultas academicas</h3>
-                    <p class="text-black fs-5 my-2">albusdumbledore@hogwarts.com.mg</p>
-                    <p class="text-black fs-5 my-2">profesoraminervamcgonagall@hogwarts.com.mg</p>
-                </section>
-                <section class="col-md-3 col-sm-12 m-5">
-                    <h3 class="subtitulo fw-bold">¿Donde nos encontramos?</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.365758839035!2d-0.4181464999999999!3d51.68975149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876402ee3f63599%3A0x2c0152fe0b4ec546!2sStudio%20Tour%20Dr%2C%20Leavesden%2C%20Watford%20WD25%207LR%2C%20Reino%20Unido!5e0!3m2!1ses!2sbr!4v1707166218267!5m2!1ses!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+                  </form>
+            </div>
+            <div class="divContac container-lg flex-column justify-content-center">
+                <div class="divInforContac d-flex flex-wrap justify-content-center">
+                    <section class="m-3 col-md-5 col-sm-12 d-flex flex-column align-content-center">
+                        <h3 class="subtitulo">Telefono y correo electrónico de contacto</h3>
+                        <p class="">+44 (0) 20 3427 777</p>
+                        <p class="">support@wbd.com</p>
+                    </section>
+                    <section class="m-3 col-md-5 col-sm-12 d-flex flex-column align-content-center">
+                        <h3 class="subtitulo">Para consultas academicas</h3>
+                        <p class="">albusdumbledore@hogwarts.com.mg</p>
+                        <p class="">profesoraminervamcgonagall@hogwarts.com.mg</p>
+                    </section>
+                </div>
+                <section class="container-size d-flex flex-column justify-content-center align-items-center m-2">
+                    <h3 class="subtitulo text-center">¿Donde nos encontramos?</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.365758839035!2d-0.4181464999999999!3d51.68975149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876402ee3f63599%3A0x2c0152fe0b4ec546!2sStudio%20Tour%20Dr%2C%20Leavesden%2C%20Watford%20WD25%207LR%2C%20Reino%20Unido!5e0!3m2!1ses!2sbr!4v1707166218267!5m2!1ses!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa w-75"></iframe>
                 </section>
             </div>
         </div>
@@ -114,17 +119,17 @@
             <section class="contendedorRedes col-sm-12 col-md-6 d-flex justify-content-center flex-column mt-4">
                 <h4 class="text-center">Nuestras redes sociales</h4>
                 <div class="d-flex justify-content-around flex-wrap">
-                    <a href="https://www.instagram.com/hogwartsofficial_/?hl=es" target="_blank" class="iconosRedes text-white m-2 display-1">
-                        <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/hogwartsofficial_/?hl=es" target="_blank" class="text-white m-2 display-1">
+                        <i class="fa-brands fa-instagram animationInstagram"></i>
                     </a>
-                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="iconosRedes text-white m-2 display-1">
-                        <i class="fa-brands fa-whatsapp"></i>
+                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="text-white m-2 display-1">
+                        <i class="fa-brands fa-whatsapp animationWhatsApp"></i>
                     </a>
-                    <a href="https://www.facebook.com/HPHogwartsMystery/" target="_blank" class="iconosRedes text-white m-2 display-1">
-                        <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.facebook.com/HPHogwartsMystery/" target="_blank" class="text-white m-2 display-1">
+                        <i class="fa-brands fa-facebook animationFacebook"></i>
                     </a>
-                    <a href="https://www.youtube.com/@harrypotter" target="_blank" class="iconosRedes text-white m-2 display-1">
-                        <i class="fa-brands fa-youtube"></i>
+                    <a href="https://www.youtube.com/@harrypotter" target="_blank" class="text-white m-2 display-1">
+                        <i class="fa-brands fa-youtube animationYoutube"></i>
                     </a>
                 </div>
             </section>
@@ -135,6 +140,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,7 +1,30 @@
 footer {
     background-color: $darker-violet;
-    .iconosRedes {
+}
+    @mixin iconosRedes ($color){
         text-decoration: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.2);
+            color: $color;
+            flex-grow: 2;
+        }          
+    }
+    .iconosRedes:hover .iconosRedes:not(:hover) {
+        flex-grow: 1;
+    }
+    .animationInstagram{
+        @include iconosRedes(#833AB4);
+    }
+    .animationFacebook{
+        @include iconosRedes(#1877F2);
+    }
+    .animationWhatsApp{
+        @include iconosRedes(#25D366);
+    }
+    .animationYoutube{
+        @include iconosRedes(#FF0000);
     }
     .iconoWhatsapp {
         width: 40px;
@@ -9,8 +32,13 @@ footer {
         .icono {
             text-decoration: none;
             color: $golden-yellow;
-            //Dejo este estilo porque no quiero que el icono se achique cuando sea vista mobile
             font-size: 2rem;
+            cursor: pointer;
         }
     }
-}
+
+
+    .mapa {
+        max-width: 100%;
+    }
+

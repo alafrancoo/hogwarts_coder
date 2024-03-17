@@ -1,172 +1,242 @@
-    main {
-        .encabezado {
-            height: 300px;
-            .tituloPagina {
-                font-weight: map-get($map: $fontWeights, $key: 9);
-                color: $golden-yellow;
-            }
+.encabezado {
+    height: 300px;
+    .tituloPagina {
+        font-weight: map-get($map: $fontWeights, $key: 9);
+        color: $golden-yellow;
+    }
 
-            .subtituloPagina {
-                font-weight: map-get($map: $fontWeights, $key: 8)
-            }        
-            .encabezado__img {
-                z-index: -1;
-                height: 360px;
-                object-fit: $fit-container;
-            }
-        }     
-        .botones {
-            text-decoration: none;
+    .subtituloPagina {
+        font-weight: map-get($map: $fontWeights, $key: 8)
+    }        
+    .encabezado__img {
+        z-index: -1;
+        height: 360px;
+        object-fit: $fit-container;
+    }
+}   
+@mixin span ($textcolor){
+   font-weight: map-get($map: $fontWeights, $key: 7);
+   color: $textcolor;
+}
+.spanWhite{
+    @include span ($white);
+}
+.spanViolet{
+    @include span ($darker-violet);
+}
+.botones {
+    text-decoration: none;
+    background-color: $golden-yellow;
+    color: $white;
+    text-align: center;
+    padding: 10px;
+    font-weight: map-get($map: $fontWeights, $key: 8);
+    border: 3px solid transparent;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    &:hover {
+        background-color: $white;
+        color: $golden-yellow;
+        border: 3px solid
+    }
+}        
+.botonesInversos {
+    @extend .botones;
+    background-color: $white;
+    color: $golden-yellow;  
+    border: 3px solid;
+    &:hover {
+        background-color: $golden-yellow;
+        color: $white;
+        border-width: 3px solid transparent;
+    }
+}
+/* Aqui van los estilos especificos de la pagina index*/
+.subtitulosIndex {
+font-weight: map-get($map: $fontWeights, $key: 8);
+color: $darker-violet;
+}    
+/* Aqui van los estilos especificos de la pagina historia*/
+.divBackground {
+    background-image: url(../assets/img/historia/cdc1.jpg);
+}
+.fundadores{
+    position: relative;
+    .imgFundadores {
+        width: 170px;
+    }
+    .imgHover{
+        @extend .imgFundadores;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+.tarjetas {
+    background-color: $darker-violet;
+    border-radius: 100px;
+    .tituloTarjetas {
+        color: $golden-yellow;
+    }
+    .magosDiv {
+        .tarjetasMagos {
             background-color: $golden-yellow;
-            color: $white;
-            text-align: center;
-            padding: 10px;
-            font-weight: map-get($map: $fontWeights, $key: 8);
-            border-radius: 13px;
-            &:hover {
-                background-color: $white;
-                color: $golden-yellow;  
-                border-width: 3px;
-                border-style: solid;
-            }
-        }        
-        .botonesInversos {
-            @extend .botones;
-            background-color: $white;
-            color: $golden-yellow;  
-            border-width: 3px;
-            border-style: solid;
-            &:hover {
-                background-color: $golden-yellow;
-                color: $white;
-            }
-        }
-        
-        /* Aqui van los estilos especificos de la pagina index*/
-
-     
-        .subtitulosIndex {
-        font-weight: map-get($map: $fontWeights, $key: 8);
-        color: $darker-violet;
-        }    
-         
-        
-
-        /* Aqui van los estilos especificos de la pagina historia*/
-        .divBackground {
-            background-image: url(../assets/img/historia/cdc1.jpg);
-        }
-        .imgFundadores {
-            width: 170px;
-        }  
-        .tarjetas {
-            background-color: $darker-violet;
-            border-radius: 100px;
-            .tituloTarjetas {
-                color: $golden-yellow;
-            }
-            .magosDiv {
-                .tarjetasMagos {
-                    background-color: $golden-yellow;
-                    border-radius: 16px;
-                    .imgTarjetas {
-                        height: 340px;
-                        object-fit: $fit-container;
-                        width: 95%;
-                        margin: 7px;
-                    }
-                }
-            }
-        }
-
-        /*Aqui van los estilos especificos de la pagina inscripciones*/
-        .tituloInscripciones {
-            font-weight: map-get($map: $fontWeights, $key: 8);
-            color: $darker-violet;        
-            }
-        .subtituloFelicitaciones {
-            color: $darker-violet;
-            font-weight: map-get($map: $fontWeights, $key: 7);
-        }
-        .tarjetaError {
-            background-color: $medium-violet;
-            .subtituloError {
-                font-weight: map-get($map: $fontWeights, $key: 7);
-            }
-        }
-
-        .galeria {
-            .subtitulo {
-                color: $darker-violet;
-                font-weight: map-get($map: $fontWeights, $key: 8);
-            }
-            .contenedorGaleria {
-                row-gap: 40px;
-                .imgGaleria {
-                    width: 400px;
-                    height: 200px;
-                    box-shadow: 0px 0px 26px -5px rgba(0,0,0,0.75);
-                    
-                    img {
-                        object-fit: $fit-container;
-                    }
-                }
-            }
-        }
-
-        /*Aqui van los estilos especificos de la pagina padres*/
-
-            .contenedorCorreo {
-                z-index: -1;
-                background-color: #2d3250;
-                .imgCorreo {
-                    height: 360px;
-                    object-fit: cover;
-                }
-            }
-            .contenedorNoticias {
-                .subtitulo {
-                    color: #2d3250;
-                }
-                .noticia {
-                    .imgNoticias {
-                        width: 100%;
-                        height: 340px;
-                        object-fit: cover;
-                    }
-                }
-            }
-        
-
-        /*Aqui van los estilos especificos de la pagina contacto*/
-
-        .contenedorContactoFlex {
-            .formularioTexto {
-                color: #2d3250;
-            }
-            .botones{
-                border-style: none;
-            }
-            /*aca intente darle estilo a los inputs y me gusto el resultado por lo que lo deje, pero el placeholder desaparece por mas de que le ponga un color*/
-            .inputs {
-                background-color: #676f9d;
-                &:focus{
-                    background-color: #fff;
-                    box-shadow: 0px 0px 20px 0px #676f9d inset;
-                    color: #2d3250;
-                    font-weight: 600;
-                    border: 1px solid;
-                }
-            }
-            .subtitulo {
-                color: #2d3250;
-            }
-            .mapa {
-               border: 15px #d5a707 solid;
-               background-color: #d5a707;
-            }
-            .divconta {
-                box-sizing: content-box;
+            border-radius: 16px;
+            .imgTarjetas {
+                height: 340px;
+                object-fit: $fit-container;
+                width: 95%;
+                margin: 7px;
             }
         }
     }
+}
+
+/*Aqui van los estilos especificos de la pagina inscripciones*/
+.tituloInscripciones {
+    font-weight: map-get($map: $fontWeights, $key: 8);
+    color: $darker-violet;        
+    }
+.subtituloFelicitaciones {
+    color: $darker-violet;
+    font-weight: map-get($map: $fontWeights, $key: 7);
+}
+.tarjetaError {
+    background-color: $medium-violet;
+    .subtituloError {
+        font-weight: map-get($map: $fontWeights, $key: 7);
+    }
+}
+
+.galeria {
+    .subtitulo {
+        color: $darker-violet;
+        font-weight: map-get($map: $fontWeights, $key: 8);
+    }
+    .contenedorGaleria {
+        row-gap: 40px;
+        .imgGaleria {
+            view-timeline-name: --img;
+            view-timeline-axis: block;
+            animation-timeline: --img;
+            animation-name: show;
+            animation-range: entry 25% cover 50%;
+            animation-fill-mode: both;
+            max-width: 95%;
+            width: 400px;
+            height: 200px;
+            box-shadow: 0px 0px 26px -5px rgba(0,0,0,0.75);
+            position: relative;
+            img {
+                object-fit: $fit-container;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: $darker-violet;
+            }
+              
+            &:hover .overlay {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+/*Aqui van los estilos especificos de la pagina padres*/
+
+.contenedorCorreo {
+    z-index: -1;
+    background-color: $darker-violet;
+    .imgCorreo {
+        height: 360px;
+        object-fit: $fit-container;
+    }
+}
+.contenedorNoticias {
+    .subtitulo {
+        color: $darker-violet;
+    }
+    .noticia {
+        .imgNoticias {
+            width: 100%;
+            height: 340px;
+            object-fit: $fit-container;
+        }
+    }
+}
+        
+
+/*Aqui van los estilos especificos de la pagina contacto*/
+
+.formContac{
+    border-radius: 20px;
+    background-color: $darker-violet;
+    padding: 50px;
+    .form-control{
+        color: $white;
+        background-color: $darker-violet;
+        box-shadow: none !important;
+        border: none;
+        border-bottom: 1px solid $white;
+        border-radius: 4px 4px 0 0;
+    }
+    .formTittles{
+        font-weight: map-get($map: $fontWeights, $key: 8);
+    }
+    .botones {
+        background-color: $light-violet;
+        color: $white;
+        width: 200px;
+        &:hover{
+            background-color: $white;
+            color: $light-violet
+        }
+    }
+}
+.divContac {
+    .divInforContac{
+        box-sizing: content-box;;    
+    }
+    .subtitulo {
+        color: $medium-violet;
+        font-weight: map-get($map: $fontWeights, $key: 8);
+    }
+    .mapa {
+        border: 15px $golden-yellow solid;
+        background-color: $golden-yellow;
+        height: 300px;
+    }
+} 
+@media only screen and (max-width: 600px) {
+    form {
+        width: 100% !important;
+    }
+}
+
+@keyframes show{
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 * {
@@ -23,13 +22,14 @@ header .anclasNavegador {
   font-weight: 800;
 }
 header .anclasNavegador:hover {
-  text-decoration: underline 3px;
+  text-decoration: underline 2px;
+  color: #fff;
 }
 header .custom-toggler {
-  background-color: #d5a707; /* Color del borde del botón */
+  background-color: #d5a707;
 }
 header .custom-toggler-icon {
-  background-color: #d5a707; /* Color del icono de hamburguesa */
+  background-color: #d5a707;
 }
 
 @media (max-width: 767px) {
@@ -38,172 +38,309 @@ header .custom-toggler-icon {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgba(45, 50, 80, 0.5843137255);
+    background-color: #2d3250;
   }
 }
-main {
-  /* Aqui van los estilos especificos de la pagina index*/
-  /* Aqui van los estilos especificos de la pagina historia*/
-  /*Aqui van los estilos especificos de la pagina inscripciones*/
-  /*Aqui van los estilos especificos de la pagina padres*/
-  /*Aqui van los estilos especificos de la pagina contacto*/
-}
-main .encabezado {
+.encabezado {
   height: 300px;
 }
-main .encabezado .tituloPagina {
+.encabezado .tituloPagina {
   font-weight: 900;
   color: #d5a707;
 }
-main .encabezado .subtituloPagina {
+.encabezado .subtituloPagina {
   font-weight: 800;
 }
-main .encabezado .encabezado__img {
+.encabezado .encabezado__img {
   z-index: -1;
   height: 360px;
   object-fit: cover;
 }
-main .botones, main .botonesInversos {
+
+.spanWhite {
+  font-weight: 700;
+  color: #fff;
+}
+
+.spanViolet {
+  font-weight: 700;
+  color: #2d3250;
+}
+
+.botones, .botonesInversos {
   text-decoration: none;
   background-color: #d5a707;
   color: #fff;
   text-align: center;
   padding: 10px;
   font-weight: 800;
+  border: 3px solid transparent;
   border-radius: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
-main .botones:hover, main .botonesInversos:hover {
+.botones:hover, .botonesInversos:hover {
   background-color: #fff;
   color: #d5a707;
-  border-width: 3px;
-  border-style: solid;
+  border: 3px solid;
 }
-main .botonesInversos {
+
+.botonesInversos {
   background-color: #fff;
   color: #d5a707;
-  border-width: 3px;
-  border-style: solid;
+  border: 3px solid;
 }
-main .botonesInversos:hover {
+.botonesInversos:hover {
   background-color: #d5a707;
   color: #fff;
+  border-width: 3px solid transparent;
 }
-main .subtitulosIndex {
+
+/* Aqui van los estilos especificos de la pagina index*/
+.subtitulosIndex {
   font-weight: 800;
   color: #2d3250;
 }
-main .divBackground {
+
+/* Aqui van los estilos especificos de la pagina historia*/
+.divBackground {
   background-image: url(../assets/img/historia/cdc1.jpg);
 }
-main .imgFundadores {
+
+.fundadores {
+  position: relative;
+}
+.fundadores .imgFundadores, .fundadores .imgHover {
   width: 170px;
 }
-main .tarjetas {
+.fundadores .imgHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.fundadores .imgHover:hover {
+  opacity: 1;
+}
+
+.tarjetas {
   background-color: #2d3250;
   border-radius: 100px;
 }
-main .tarjetas .tituloTarjetas {
+.tarjetas .tituloTarjetas {
   color: #d5a707;
 }
-main .tarjetas .magosDiv .tarjetasMagos {
+.tarjetas .magosDiv .tarjetasMagos {
   background-color: #d5a707;
   border-radius: 16px;
 }
-main .tarjetas .magosDiv .tarjetasMagos .imgTarjetas {
+.tarjetas .magosDiv .tarjetasMagos .imgTarjetas {
   height: 340px;
   object-fit: cover;
   width: 95%;
   margin: 7px;
 }
-main .tituloInscripciones {
+
+/*Aqui van los estilos especificos de la pagina inscripciones*/
+.tituloInscripciones {
   font-weight: 800;
   color: #2d3250;
 }
-main .subtituloFelicitaciones {
+
+.subtituloFelicitaciones {
   color: #2d3250;
   font-weight: 700;
 }
-main .tarjetaError {
+
+.tarjetaError {
   background-color: #424769;
 }
-main .tarjetaError .subtituloError {
+.tarjetaError .subtituloError {
   font-weight: 700;
 }
-main .galeria .subtitulo {
+
+.galeria .subtitulo {
   color: #2d3250;
   font-weight: 800;
 }
-main .galeria .contenedorGaleria {
+.galeria .contenedorGaleria {
   row-gap: 40px;
 }
-main .galeria .contenedorGaleria .imgGaleria {
+.galeria .contenedorGaleria .imgGaleria {
+  view-timeline-name: --img;
+  view-timeline-axis: block;
+  animation-timeline: --img;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+  max-width: 95%;
   width: 400px;
   height: 200px;
   box-shadow: 0px 0px 26px -5px rgba(0, 0, 0, 0.75);
+  position: relative;
 }
-main .galeria .contenedorGaleria .imgGaleria img {
+.galeria .contenedorGaleria .imgGaleria img {
   object-fit: cover;
 }
-main .contenedorCorreo {
+.galeria .contenedorGaleria .imgGaleria .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #2d3250;
+}
+.galeria .contenedorGaleria .imgGaleria:hover .overlay {
+  opacity: 0.8;
+}
+
+/*Aqui van los estilos especificos de la pagina padres*/
+.contenedorCorreo {
   z-index: -1;
   background-color: #2d3250;
 }
-main .contenedorCorreo .imgCorreo {
+.contenedorCorreo .imgCorreo {
   height: 360px;
   object-fit: cover;
 }
-main .contenedorNoticias .subtitulo {
+
+.contenedorNoticias .subtitulo {
   color: #2d3250;
 }
-main .contenedorNoticias .noticia .imgNoticias {
+.contenedorNoticias .noticia .imgNoticias {
   width: 100%;
   height: 340px;
   object-fit: cover;
 }
-main .contenedorContactoFlex {
-  /*aca intente darle estilo a los inputs y me gusto el resultado por lo que lo deje, pero el placeholder desaparece por mas de que le ponga un color*/
+
+/*Aqui van los estilos especificos de la pagina contacto*/
+.formContac {
+  border-radius: 20px;
+  background-color: #2d3250;
+  padding: 50px;
 }
-main .contenedorContactoFlex .formularioTexto {
-  color: #2d3250;
+.formContac .form-control {
+  color: #fff;
+  background-color: #2d3250;
+  box-shadow: none !important;
+  border: none;
+  border-bottom: 1px solid #fff;
+  border-radius: 4px 4px 0 0;
 }
-main .contenedorContactoFlex .botones, main .contenedorContactoFlex .botonesInversos {
-  border-style: none;
+.formContac .formTittles {
+  font-weight: 800;
 }
-main .contenedorContactoFlex .inputs {
+.formContac .botones, .formContac .botonesInversos {
   background-color: #676f9d;
+  color: #fff;
+  width: 200px;
 }
-main .contenedorContactoFlex .inputs:focus {
+.formContac .botones:hover, .formContac .botonesInversos:hover {
   background-color: #fff;
-  box-shadow: 0px 0px 20px 0px #676f9d inset;
-  color: #2d3250;
-  font-weight: 600;
-  border: 1px solid;
-}
-main .contenedorContactoFlex .subtitulo {
-  color: #2d3250;
-}
-main .contenedorContactoFlex .mapa {
-  border: 15px #d5a707 solid;
-  background-color: #d5a707;
-}
-main .contenedorContactoFlex .divconta {
-  box-sizing: content-box;
+  color: #676f9d;
 }
 
+.divContac .divInforContac {
+  box-sizing: content-box;
+}
+.divContac .subtitulo {
+  color: #424769;
+  font-weight: 800;
+}
+.divContac .mapa {
+  border: 15px #d5a707 solid;
+  background-color: #d5a707;
+  height: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    width: 100% !important;
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
 footer {
   background-color: #2d3250;
 }
-footer .iconosRedes {
-  text-decoration: none;
+
+.iconosRedes:hover .iconosRedes:not(:hover) {
+  flex-grow: 1;
 }
-footer .iconoWhatsapp {
+
+.animationInstagram {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.animationInstagram:hover {
+  transform: scale(1.2);
+  color: #833AB4;
+  flex-grow: 2;
+}
+
+.animationFacebook {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.animationFacebook:hover {
+  transform: scale(1.2);
+  color: #1877F2;
+  flex-grow: 2;
+}
+
+.animationWhatsApp {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.animationWhatsApp:hover {
+  transform: scale(1.2);
+  color: #25D366;
+  flex-grow: 2;
+}
+
+.animationYoutube {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.animationYoutube:hover {
+  transform: scale(1.2);
+  color: #FF0000;
+  flex-grow: 2;
+}
+
+.iconoWhatsapp {
   width: 40px;
   height: 40px;
 }
-footer .iconoWhatsapp .icono {
+.iconoWhatsapp .icono {
   text-decoration: none;
   color: #d5a707;
   font-size: 2rem;
+  cursor: pointer;
+}
+
+.mapa {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=estilos.css.map */
