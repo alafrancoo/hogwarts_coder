@@ -1,0 +1,21 @@
+@mixin span ($textcolor){
+    font-weight: map-get($map: $fontWeights, $key: 7);
+    color: $textcolor;
+ }
+@mixin botones($bckgcolor, $txtcolor){
+    text-decoration: none;
+    background-color: $bckgcolor;
+    color: $txtcolor;
+    font-weight: map-get($map: $fontWeights, $key: 8);
+    // Este borde es para que la etiqueta crezca sin empujar el contenido cuando se le hace hover
+    border: 3px solid transparent;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    &:hover {
+        background-color: $txtcolor;
+        color: $bckgcolor;
+        border: 3px solid
+    }
+}

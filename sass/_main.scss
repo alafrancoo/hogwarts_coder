@@ -13,10 +13,6 @@
         height: 360px;
         object-fit: $fit-container;
     }
-}   
-@mixin span ($textcolor){
-   font-weight: map-get($map: $fontWeights, $key: 7);
-   color: $textcolor;
 }
 .spanWhite{
     @include span ($white);
@@ -24,34 +20,11 @@
 .spanViolet{
     @include span ($darker-violet);
 }
-.botones {
-    text-decoration: none;
-    background-color: $golden-yellow;
-    color: $white;
-    text-align: center;
-    padding: 10px;
-    font-weight: map-get($map: $fontWeights, $key: 8);
-    border: 3px solid transparent;
-    border-radius: 13px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    transition: color 0.3s ease;
-    &:hover {
-        background-color: $white;
-        color: $golden-yellow;
-        border: 3px solid
-    }
+.botonesGolden {
+    @include botones ($golden-yellow, $white);
 }        
-.botonesInversos {
-    @extend .botones;
-    background-color: $white;
-    color: $golden-yellow;  
-    border: 3px solid;
-    &:hover {
-        background-color: $golden-yellow;
-        color: $white;
-        border-width: 3px solid transparent;
-    }
+.botonInverso {
+    @include botones ($white, $golden-yellow);
 }
 /* Aqui van los estilos especificos de la pagina index*/
 .subtitulosIndex {
@@ -62,25 +35,10 @@ color: $darker-violet;
 .divBackground {
     background-image: url(../assets/img/historia/cdc1.jpg);
 }
-.fundadores{
-    position: relative;
-    .imgFundadores {
-        width: 170px;
-    }
-    .imgHover{
-        @extend .imgFundadores;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        top: 0;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        &:hover{
-            opacity: 1;
-        }
-    }
+.imgFundadores {
+    width: 170px;
 }
+
 .tarjetas {
     background-color: $darker-violet;
     border-radius: 100px;
@@ -200,14 +158,9 @@ color: $darker-violet;
     .formTittles{
         font-weight: map-get($map: $fontWeights, $key: 8);
     }
-    .botones {
-        background-color: $light-violet;
-        color: $white;
+    .botonesViolet {
+        @include botones ($light-violet, $white);
         width: 200px;
-        &:hover{
-            background-color: $white;
-            color: $light-violet
-        }
     }
 }
 .divContac {

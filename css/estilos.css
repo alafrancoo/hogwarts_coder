@@ -67,12 +67,10 @@ header .custom-toggler-icon {
   color: #2d3250;
 }
 
-.botones, .botonesInversos {
+.botonesGolden {
   text-decoration: none;
   background-color: #d5a707;
   color: #fff;
-  text-align: center;
-  padding: 10px;
   font-weight: 800;
   border: 3px solid transparent;
   border-radius: 13px;
@@ -80,21 +78,27 @@ header .custom-toggler-icon {
   transition: background-color 0.3s ease;
   transition: color 0.3s ease;
 }
-.botones:hover, .botonesInversos:hover {
+.botonesGolden:hover {
   background-color: #fff;
   color: #d5a707;
   border: 3px solid;
 }
 
-.botonesInversos {
+.botonInverso {
+  text-decoration: none;
   background-color: #fff;
   color: #d5a707;
-  border: 3px solid;
+  font-weight: 800;
+  border: 3px solid transparent;
+  border-radius: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
-.botonesInversos:hover {
+.botonInverso:hover {
   background-color: #d5a707;
   color: #fff;
-  border-width: 3px solid transparent;
+  border: 3px solid;
 }
 
 /* Aqui van los estilos especificos de la pagina index*/
@@ -108,23 +112,8 @@ header .custom-toggler-icon {
   background-image: url(../assets/img/historia/cdc1.jpg);
 }
 
-.fundadores {
-  position: relative;
-}
-.fundadores .imgFundadores, .fundadores .imgHover {
+.imgFundadores {
   width: 170px;
-}
-.fundadores .imgHover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.fundadores .imgHover:hover {
-  opacity: 1;
 }
 
 .tarjetas {
@@ -238,14 +227,22 @@ header .custom-toggler-icon {
 .formContac .formTittles {
   font-weight: 800;
 }
-.formContac .botones, .formContac .botonesInversos {
+.formContac .botonesViolet {
+  text-decoration: none;
   background-color: #676f9d;
   color: #fff;
+  font-weight: 800;
+  border: 3px solid transparent;
+  border-radius: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
   width: 200px;
 }
-.formContac .botones:hover, .formContac .botonesInversos:hover {
+.formContac .botonesViolet:hover {
   background-color: #fff;
   color: #676f9d;
+  border: 3px solid;
 }
 
 .divContac .divInforContac {
